@@ -1,0 +1,46 @@
+<div>
+    <Divider/>
+    <h2>DropDown As PV</h2>
+    <CCRSimpleList v-model="selectedItem" optionValue="name"  :id="name"  :options="r_d_items" :name="name"  optionLabel="name" @onChange="msg" placeholder="Names List"></CCRSimpleList>
+
+</div>
+<div>
+    <Divider/>
+    <h2>DropDown With  Filter </h2>
+    <CCRSimpleList v-model="selectedItem" optionValue="name"  :id="name"  :options="r_d_items" :name="name" filter  optionLabel="name" @onChange="msg" placeholder="Names List"></CCRSimpleList>
+
+</div>
+<div>
+    <Divider/>
+    <h2>DropDown With  Clear </h2>
+    <CCRSimpleList v-model="selectedItem" optionValue="name"  :id="name"  :options="r_d_items" :name="name" showClear  optionLabel="name" @onChange="msg" placeholder="Names List"></CCRSimpleList>
+
+</div>
+<div>
+    <Divider/>
+    <h2>Simple Listbox</h2>
+    <CCRSimpleList v-model="l_sI" isListBox :optionsList="l_items" optionLabel="name"  @onChange="listmsg"  optionValue="name"   :options="l_items" ></CCRSimpleList>
+</div>
+<div>
+    <Divider/>
+    <h2>Listbox with Filter</h2>
+    <CCRSimpleList v-model="l_sI" isListBox :optionsList="l_items" optionLabel="name" filter  @onChange="listmsg"  optionValue="name"   :options="l_items" ></CCRSimpleList>
+</div>
+
+<div>
+    <Divider/>
+    <h2>MultiSelect </h2>
+    <CCRSimpleList v-model="mus"  isMultiSelect   :options="mu_items"  placeholder="Select a Name " optionLabel="name" maxSelectedLabels=5  @onChange="multimsg()"  optionValue="name"  ></CCRSimpleList> 
+</div>
+<div>
+    <Divider/>
+    <h2>MultiSelect with filterMode </h2>
+    <CCRSimpleList v-model="mus"  isMultiSelect   :options="mu_items"  placeholder="Select a Name " filter optionLabel="name" maxSelectedLabels=5  @onChange="multimsg()"  optionValue="name"  ></CCRSimpleList> 
+</div>
+<div>
+    <Divider/>
+    <h2>MultiSelect Display Comma </h2>
+    <CCRSimpleList v-model="mus"  isMultiSelect   :options="mu_items"  placeholder="Select a Name " display="comma" optionLabel="name" maxSelectedLabels=5  @onChange="multimsg()"  optionValue="name"  ></CCRSimpleList> 
+</div>
+
+<h2>Above All Present in SimpleList Component</h2>

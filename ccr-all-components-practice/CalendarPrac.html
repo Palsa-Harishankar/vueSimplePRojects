@@ -1,0 +1,41 @@
+<div>
+    <Divider/>
+    <h1>CCRDatePicker Component</h1>
+    <h3>Basic Calender</h3>
+     <CCRDatePicker v-model="date" :showIcon="showIcon"></CCRDatePicker>
+    <h3>Icon Calender</h3>
+    <CCRDatePicker  v-model="date" class="k" showIcon></CCRDatePicker>
+
+    <h3>Selecting Multiple Dates</h3>
+    <CCRDatePicker  v-model="date" class="k" :selectionMode="selectionMode"></CCRDatePicker>
+
+    <h3>Button Calender</h3>
+    <CCRDatePicker  v-model="date" class="k" :showButtonBar="showButtonBar"></CCRDatePicker>
+   
+    <h3>Select only month</h3>
+    <CCRDatePicker  v-model="date" class="k" view="month"></CCRDatePicker>
+
+    <h3>Select only Year</h3>
+    <CCRDatePicker    v-model="date" class="k" view="year"></CCRDatePicker>
+    
+    <h3>Inline Calendar</h3>
+    <CCRDatePicker    v-model="date" class="k" :view="view" :inline="inline" ></CCRDatePicker>
+    
+    <h2>Submit Date</h2>
+    <CCRDatePicker class="k" v-model="date" :showIcon="showIcon" >  </CCRDatePicker>
+    <br>
+    <CCRInputButton buttonViewType="3" class="k" label="submit" @onClick="sub()"></CCRInputButton>
+   <br><br>
+    <CCRLayout columns="1">
+
+        <CCRColView colSize="6">
+            <div class="p-3 text-center font-bold border-round bg-primary">1-6</div>
+        </CCRColView>
+        <CCRColView colSize="6">
+            <div class="p-3 text-center font-bold border-round bg-primary">7-12</div>
+        </CCRColView>
+       
+    
+    </CCRLayout>
+
+</div>

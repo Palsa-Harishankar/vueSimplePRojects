@@ -1,0 +1,68 @@
+<h2 class="flex flex-wrap justify-content-center">Basic Button Component</h2>
+<div class="flex flex-wrap justify-content-center">
+<Button  label="Button" @click="successMessage"></Button>
+</div>
+<Divider/>
+<h2 class="flex flex-wrap justify-content-center">Link type Button</h2>
+<div class="flex flex-wrap justify-content-center">
+<Button  link label="Link" @click="successMessage"></Button>
+</div>
+<Divider/>
+<h2 class="flex flex-wrap justify-content-center">Icon Button</h2>
+<div class="flex flex-wrap justify-content-center gap-2">
+<Button  icon="pi pi-check" label="check" @click="successMessage"></Button>
+<Button  icon="pi pi-user" label="user" @click="successMessage"></Button>
+<Button  icon="pi pi-whatsapp" label="whatsapp" @click="successMessage"></Button>
+<Button  icon="pi pi-whatsapp" aria-label="check" @click="successMessage"></Button>
+</div>
+<Divider/>
+<h2 class="flex flex-wrap justify-content-center">Toast Buttons</h2>
+<div class="flex flex-wrap justify-content-center gap-2">
+<Button severity="success"   label="Sucess" @click="successMessage"></Button>
+<Button severity="warning" label="Warn" @click="warnMessage"></Button>
+<Button  severity="danger" label="Error" @click="errorMessage"></Button>
+<Button  severity="info" label="Info" @click="infoMessage"></Button>
+<Button  severity="help" label="help" @click="successMessage"></Button>
+<Button   label="primary" @click="infoMessage"></Button>
+</div>
+<Divider/>
+<h2 class="flex flex-wrap justify-content-center">Outlined Buttons</h2>
+<div class="flex flex-wrap justify-content-center gap-2">
+<Button severity="success"   label="Sucess" outlined @click="successMessage"></Button>
+<Button severity="warning" label="Warn" outlined @click="warnMessage"></Button>
+<Button  severity="danger" label="Error" outlined @click="errorMessage"></Button>
+<Button  severity="info" label="Info" outlined @click="infoMessage"></Button>
+<Button  severity="help" label="help" outlined @click="successMessage"></Button>
+<Button   label="primary" outlined @click="infoMessage"></Button>
+</div>
+<Divider/>
+<h2 class="flex flex-wrap justify-content-center">Text Buttons</h2>
+<div class="flex flex-wrap justify-content-center gap-2">
+    <Button severity="success"   label="Sucess" text @click="successMessage"></Button>
+    <Button severity="warning" label="Warn" text @click="warnMessage"></Button>
+    <Button  severity="danger" label="Error" text @click="errorMessage"></Button>
+    <Button  severity="info" label="Info" text @click="infoMessage"></Button>
+    <Button  severity="help" label="help" text @click="successMessage"></Button>
+    <Button   label="primary" text @click="warnMessage"></Button>
+</div>
+<Divider/>
+<h2 class="flex flex-wrap justify-content-center">Raised Text Buttons</h2>
+<div class="flex flex-wrap justify-content-center gap-2">
+    <Button severity="success"   label="Sucess" text raised @click="successMessage"></Button>
+    <Button severity="warning" label="Warn" text raised @click="warnMessage"></Button>
+    <Button  severity="danger" label="Error" raised text @click="errorMessage"></Button>
+    <Button  severity="info" label="Info" raised text @click="infoMessage"></Button>
+    <Button  severity="help" label="help" raised text @click="successMessage"></Button>
+    <Button   label="primary"  raised text @click="infoMessage"></Button>
+</div>
+<Divider/>
+<h2 class="flex flex-wrap justify-content-center">Outlined Buttons</h2>
+<div class="flex flex-wrap justify-content-center gap-2">
+<Button severity="success"   label="Sucess" outlined @click="successMessage"></Button>
+<Button severity="warning" label="Warn" outlined @click="warnMessage"></Button>
+<Button  severity="danger" label="Error" outlined @click="errorMessage"></Button>
+<Button  severity="info" label="Info" outlined @click="infoMessage"></Button>
+<Button  severity="help" label="help" outlined @click="successMessage"></Button>
+<Button   label="primary" outlined @click="infoMessage()"></Button>
+</div>
+<Divider/>

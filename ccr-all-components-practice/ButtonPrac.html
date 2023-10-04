@@ -1,0 +1,106 @@
+<div>
+    <Divider/>
+    <h1>CCRInputButton</h1>
+    <h3>Normal Buttons</h3>
+    <CCRLayout columns="1">
+        <CCRColView colSize="10">
+
+            <CCRInputButton label="default" @onClick="infoMessage" class="btn"></CCRInputButton>
+            <CCRInputButton buttonViewType="0" label="Primary"  class="btn" @onClick="errorMessage()"></CCRInputButton>
+            
+            <CCRInputButton buttonViewType="1" label="Secondary"  class="btn" @onClick="warnMessage()"></CCRInputButton>
+            <CCRInputButton buttonViewType="2" label="Success"  class="btn" @onClick="successMessage()"></CCRInputButton>
+            <CCRInputButton buttonViewType="3" label="info"  @onClick="infoMessage" class="btn"></CCRInputButton>
+            <CCRInputButton buttonViewType="4" label="warn" @onClick="warnMessage" class="btn"></CCRInputButton>
+            <CCRInputButton buttonViewType="5" label="help" @onClick="successMessage"  class="btn"></CCRInputButton>
+            <CCRInputButton buttonViewType="6" label="danger/Error" @onClick="errorMessage"  class="btn"></CCRInputButton>
+        </CCRColView>
+    </CCRLayout>
+
+</div>
+<div>
+    <Divider/>
+    <h3>Link Type Buttons</h3>
+    <CCRLayout columns="1">
+        <CCRColView colSize="12">
+    <CCRInputButton class="btn" buttonViewType="0" isLink label="Primary"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" text  buttonViewType="1"  isLink="true" label="Secondary" @onClick="warnMessage"></CCRInputButton>
+    <CCRInputButton class="btn" text label="Success" isLink  buttonViewType="2"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" text label="info"   isLink buttonViewType="3" @onClick="infoMessage"></CCRInputButton>
+    <CCRInputButton class="btn" label="warn" text isLink buttonViewType="4" @onClick="warnMessage"> </CCRInputButton>
+    <CCRInputButton class="btn" label="help" buttonViewType="5" isLink text  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" label="Error" buttonViewType="6" isLink text @onClick="errorMessage"></CCRInputButton>
+</CCRColView>
+</CCRLayout>
+
+</div> 
+
+<div>
+    <Divider/>
+    <h3>Raised Buttons</h3>
+    <CCRInputButton class="btn" isRaised="true" text  buttonViewType="0" label="Primary" @onClick="errorMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isTextButton isRaised buttonViewType="1" label="Secondary" @onClick="warnMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isRaised text buttonViewType="2" label="Success"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" text buttonViewType="3" isRaised label="info" @onClick="infoMessage"></CCRInputButton>
+    <CCRInputButton class="btn" text isRaised buttonViewType="4" label="warn"  @onClick="warnMessage"></CCRInputButton>
+    <CCRInputButton class="btn" text  isRaised buttonViewType="5" label="help" @onClick="infoMessage"></CCRInputButton>
+    <CCRInputButton class="btn" text  isRaised buttonViewType="6" label="Error" @onClick="errorMessage"></CCRInputButton>
+</div>
+<div>
+
+    <Divider/>
+    <h3>Rounded Buttons</h3>
+    <CCRInputButton class="btn" isRounded label="Primary" buttonViewType="0" @onClick="errorMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isRounded label="Secondary" buttonViewType="1" @onClick="infoMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isRounded label="Success" buttonViewType="2"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" isRounded label="info" buttonViewType="3" @onClick="infoMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isRounded label="Warn" buttonViewType="4" @onClick="warnMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isRounded label="help" buttonViewType="5"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" isRounded label="Error" buttonViewType="6" @onClick="errorMessage"></CCRInputButton>
+</div>
+<div>
+    <Divider/>
+    <h3>Text Buttons</h3>
+    <CCRInputButton class="btn" isTextButton label="Primary" buttonViewType="0" @onClick="errorMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isTextButton label="Secondary" buttonViewType="1" @onClick="warnMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isTextButton label="Success" buttonViewType="2"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" isTextButton label="info" buttonViewType="3" @onClick="infoMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isTextButton label="Warn" buttonViewType="4" @onClick="warnMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isTextButton label="help" buttonViewType="5"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" isTextButton label="error" buttonViewType="6" @onClick="errorMessage"></CCRInputButton>
+</div>
+<div>
+
+    <Divider/>
+    <h3>Outlined Buttons</h3>
+    <CCRInputButton class="btn" isOutlined label="Primary" buttonViewType="0" @onClick="errorMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isOutlined label="Secondary" buttonViewType="1" @onClick="warnMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isOutlined label="Success" buttonViewType="2"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" isOutlined label="Info" buttonViewType="3" @onClick="infoMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isOutlined label="Warn" buttonViewType="4" @onClick="warnMessage"></CCRInputButton>
+    <CCRInputButton class="btn" isOutlined label="Help" buttonViewType="5"  @onClick="successMessage()"></CCRInputButton>
+    <CCRInputButton class="btn" isOutlined label="Error"  buttonViewType="6" @onClick="errorMessage"></CCRInputButton>
+
+</div>
+<div>
+<Divider/>
+<h3>badges</h3>
+<CCRInputButton class="btn" badge="6" buttonViewType="0" label="Primary" @onClick="errorMessage"></CCRInputButton>
+<CCRInputButton class="btn" isLink isTextButton badge="16" buttonViewType="1" label="Secondary" @onClick="warnMessage"></CCRInputButton>
+<CCRInputButton class="btn" isTextButton  badge="2" buttonViewType="2" label="success"  @onClick="successMessage()"></CCRInputButton>
+<CCRInputButton class="btn" isTextButton isRaised badge="1" buttonViewType="3" label="Info" @onClick="infoMessage"></CCRInputButton>
+<CCRInputButton class="btn" isOutlined badge="4" buttonViewType="4" label="warn" @onClick="warnMessage"></CCRInputButton>
+<CCRInputButton class="btn" isRounded badge="4" buttonViewType="5" label="help"  @onClick="successMessage()"></CCRInputButton>
+<CCRInputButton class="btn" isRaised isTextButton badge="6" buttonViewType="6" label="error" @onClick="errorMessage"></CCRInputButton>
+</div>
+<div>
+<Divider/>
+<h3>badgeClass</h3>
+<CCRInputButton class="btn"  badge-class="p-badge-danger" badge="6" buttonViewType="0" label="Primary" @onClick="errorMessage"></CCRInputButton>
+<CCRInputButton class="btn"  badge-class="p-badge-info" isLink isTextButton badge="16" buttonViewType="1" label="Secondary" @onClick="warnMessage"></CCRInputButton>
+<CCRInputButton class="btn"  badge-class="p-badge-warning" isTextButton  badge="2" buttonViewType="2" label="success"  @onClick="successMessage()"></CCRInputButton>
+<CCRInputButton class="btn"  badge-class="p-badge-success" isTextButton isRaised badge="1" buttonViewType="3" label="Info" @onClick="infoMessage"></CCRInputButton>
+<CCRInputButton class="btn" badge-class="p-badge-danger" isOutlined badge="4" buttonViewType="4" label="warn" @onClick="warnMessage"></CCRInputButton>
+<CCRInputButton class="btn" badge-class="p-badge-success"  isRounded badge="4" buttonViewType="5" label="help"  @onClick="successMessage()"></CCRInputButton>
+<CCRInputButton class="btn" badge-class="p-badge-danger" isRaised isTextButton badge="6" buttonViewType="6" label="error" @onClick="errorMessage"></CCRInputButton>
+</div>
