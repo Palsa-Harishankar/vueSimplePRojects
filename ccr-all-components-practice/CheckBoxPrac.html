@@ -1,0 +1,18 @@
+<div>
+
+    <Divider></Divider>
+    <h2>CheckBox Binary</h2>
+    <label for="work">are You Ready to Work on Remote ?</label>
+    <CCRCheckbox v-model="value"  binary="true" binaryLabel="Yes/No" trueValue="YES"  id="isActive"  name="isActive"  falseValue="NO"></CCRCheckbox>
+    <p>ans: {{value}}</p>
+
+</div>
+<Divider/>
+<div>
+
+    <label for="skills">skills</label>
+    <CCRCheckbox v-model="r_selectedValues" :labels='label' id="isActive"  name="isActive"  :values="values"></CCRCheckbox>
+   
+    
+</div>
+<p> skills : {{r_selectedValues}}</p>

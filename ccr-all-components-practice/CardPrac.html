@@ -1,0 +1,27 @@
+<div class="card-body">
+    <CCRCard>
+        <template #cardHeader>
+            <h2 class="card-Header">Card Header</h2>
+        </template>
+        <template #cardTitle>
+            <h4 class="card-Title">Card Title</h4>
+        </template>
+        <template #cardSubTitle>
+            <h4 class="card-Title">card SubTitle</h4>
+        </template>
+        <template #cardContent>
+            <h2>Content</h2>
+            <h3>jai ganesha 🙏  </h3>
+            <span>
+            <img src="../ccrcard/photo-1567878672699-b423b930a67b.webp" width="400" height="600" alt="jai" style="margin-right: 1rem;">
+            <img src="../ccrcard/ayyapa.jpg" width="450" height="600" alt="jai" style="margin-right: 1em;">
+            <img src="../ccrcard/OIP.jpg" width="390" height="600" alt="jai">
+                </span>
+        </template>
+        <template #cardFooter >
+            <h2>Footer</h2>
+            <CCRInputButton  style="margin-right: 67rem;"  buttonViewType="2" label="Submit"  @onClick="successMessage()"></CCRInputButton>
+            <CCRInputButton buttonViewType="6" label="Cancel" @onClick="errorMessage"></CCRInputButton>
+        </template>
+    </CCRCard>
+</div>
